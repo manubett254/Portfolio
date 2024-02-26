@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Add your CSS styles here if needed */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+        nav a:hover {
+            color: #000;
+            /* font-weight: bold; */
+        }
+        section {
+            padding: 20px;
+        }
+
+        .dropdown { 
+      display: inline-block; 
+      position: relative; 
+    } 
+  
+	
+    .dropdown-content
+    {
+      display: none;
+      position: absolute;
+      width: 100%;
+      overflow: auto;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+  }
+  /* .dropdown-content a {
+    display: block;
+    color: #21a3c0;
+    padding: 5px;
+    text-decoration: none;
+} */
+
+.dropdown-content a:hover {
+  color: #eb0d78;
+  background-color: #0b80e0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ManuBett's Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <div class="dropdown" style="display: inline-block;">
+          <a href="#projects">Projects</a>
+          <div class="dropdown-content">
+            <a href="#">Functions</a>
+            <a href="#">Data types</a>
+            <a href="#">Portfolio</a>
+            
+          </div>
+        </div>
+        
+    </nav>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to my portfolio website. Here you can learn more about me and my projects.</p>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Here are some of the projects I have worked on:</p>
+        <ul>
+            <li>Project 1: <a href="https://github.com/manubett254/Dart-Functions/blob/3a45e7e9616d77475c050cbda6ce45c104f9e55c/functions.dart">Functions</a></li>
+            <li>Project 2: <a href="https://github.com/manubett254/Dart-Functions/blob/3a45e7e9616d77475c050cbda6ce45c104f9e55c/dataTypes.dart">Data types </a></li>
+            <li>Project 3: <a href="#">Portfolio</a></li>
+        </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can reach me via:</p>
+      <ul>
+          <li>Email: bettdevs@gmail.com</li>
+          <li>GitHub: <a href="https://github.com/manubett254" target="_blank">github.com/mannubett254</a></li>
+          <!-- You can add more contact information as needed -->
+      </ul>
+  </section>
+</body>
+</html>
